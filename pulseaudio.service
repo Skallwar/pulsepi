@@ -3,6 +3,8 @@ Description=PulseAudio system server
 
 [Service]
 Type=notify
+Restart=on-failure
+RestartSec=5s
 ExecStart=pulseaudio --daemonize=no --system --realtime --log-target=journal
 
 [Install]
