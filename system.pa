@@ -74,5 +74,5 @@ load-module module-bluetooth-discover autodetect_mtu=yes
 ### Network access (may be configured with paprefs, so leave this commented
 ### here if you plan to use paprefs)
 #load-module module-esound-protocol-tcp
-load-module module-native-protocol-tcp auth-ip-acl=127.0.0.1;192.168.103.0/24
+load-module module-native-protocol-tcp auth-ip-acl=127.0.0.1; ## Insert here authorized subnet
 load-module module-zeroconf-publish
